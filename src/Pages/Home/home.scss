@@ -45,14 +45,14 @@
     width: 100%;
 }
 
-.marquee > p {
+.marquee-text {
     animation: marquee 10s linear infinite;
     animation-delay: -20s;
     color: $white;
     font-size: 3vw;
 }
 
-.marquee > p:nth-child(2) {
+.marquee-text:nth-child(2) {
     animation: marquee2 10s linear infinite;
     animation-delay: -10s;
 }
@@ -412,7 +412,7 @@
 @media only screen and (max-width: 480px) {
     .about-us-container,
     .slider-container {
-        height: 100vh;
+        height: calc(100vh - 38px);
     }
 
     .slider-image-title {

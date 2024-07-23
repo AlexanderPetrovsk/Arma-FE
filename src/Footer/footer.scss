@@ -1,0 +1,124 @@
+@import '../index.scss';
+
+.footer-container {
+    background: $black;
+    padding: 25px 50px 25px 50px;
+}
+
+.top-footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-footer > p {
+    display: none;
+}
+
+.top-footer > img {
+    height: auto;
+    flex-basis: 25%;
+    object-fit: contain;
+}
+
+.top-footer-links {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+    justify-content: end;
+}
+
+.top-footer-link {
+    color: $white;
+    font-size: 2vw;
+    flex-basis: 30%;
+    text-decoration: none;
+}
+
+.contact-item {
+    color: $white;
+    display: flex;
+    font-size: 1.2vw;
+    font-weight: 300;
+}
+
+.contact-item > p {
+    margin-left: 10px;
+}
+
+.bottom-footer { 
+    align-items: center;
+    color: $white;   
+    border-top: 1px solid $white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-footer-link {
+    color: $white;
+    font-weight: 200;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 1279px) {
+    .top-footer > p {
+        color: $white;
+        display: block;
+        margin-bottom: 50px;
+    }
+    
+    .top-footer {
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .top-footer-links {
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    
+    .top-footer-link {
+        flex-basis: 35%;
+        margin-bottom: 10px;
+    }
+    
+    .bottom-footer {
+        border: none;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    
+    .bottom-footer > p {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .top-footer-link {
+        font-size: 3vw;
+        flex-basis: 50%;
+        text-indent: 35%;
+    }
+
+    .contact-item {
+        font-size: 2.5vw;
+        max-width: 200px
+    }
+
+    .top-footer > img {
+        width: 50%;
+    }
+
+    .top-footer > p {
+        text-align: center;
+    }
+
+    .bottom-footer-link {
+        font-size: 2.5vw;
+    }
+}

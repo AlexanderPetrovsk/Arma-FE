@@ -1,0 +1,133 @@
+@import '../index.scss';
+
+.mobile-menu {
+    display: none;
+}
+
+.header-container {
+    align-items: center;
+    background: $white;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: $black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-logo {
+    flex-basis: 15%;
+    height: auto;
+    width: 100%;
+}
+
+.header-links {
+    display: flex;
+    font-size: 2vw;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    width: 45vw;
+}
+
+.header-link {
+    color: $black;
+    text-decoration: none;
+}
+
+.header-link.active {
+    font-weight: 600;
+}
+
+.header-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80vw;
+}
+
+.locale-dropdown {
+    display: flex;
+    gap: 10px;
+}
+
+.locale-flag {
+    width: 2vw;
+}
+
+.dropdown-icon {
+    width: 1vw;
+}
+
+.account-access {
+    font-size: 1.5vw;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 1279px) {
+    .hamburger-menu {
+        cursor: pointer;
+        display: block;
+        margin-right: 10px;
+    }
+
+    .header-container {
+        justify-content: space-between;
+    }
+
+    .header-content {
+        display: none;
+    }
+    
+    .header-content.open {
+        background: $white;
+        display: flex;
+        flex-direction: column-reverse;
+        position: absolute;
+        top: 90px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .account-access {
+        font-size: 18px;
+    }
+
+    .locale-flag {
+        width: 30px;
+    }
+    
+    .dropdown-icon {
+        width: 20px;
+    }
+
+    .header-links {
+        font-size: 24px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header-logo {
+        max-width: 100px;
+    }
+
+    .hamburger-menu > img {
+        max-width: 20px;
+    }
+    
+    .header-container.open {
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .header-content.open {
+        padding-bottom: 100vh;
+        position: fixed;
+        top: 38px;
+    }
+}

@@ -1,0 +1,447 @@
+@import '../../index.scss';
+
+.slider-container {
+    align-items: center;
+    background: url('../../assets/images/home-slider.png');
+    background-size: cover;
+    background-position-x: center;
+    height: 45vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.slider-image {
+    height: auto;
+    max-height: 45vw;
+    width: 100%;
+}
+
+
+.slider-image-text {
+    color: $white;
+    margin-bottom: 80px;
+    max-width: 60vw;
+    position: absolute;
+}
+
+.slider-image-description {
+    font-size: 1.5vw;
+}
+
+.slider-image-title {
+    font-size: 5vw;
+    font-weight: 700;
+}
+
+.marquee-container {
+    align-items: center;
+    bottom: 0;
+    background-color: $red;
+    display: flex;
+    height: 3vw;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+}
+
+.marquee > p {
+    animation: marquee 10s linear infinite;
+    animation-delay: -20s;
+    color: $white;
+    font-size: 3vw;
+}
+
+.marquee > p:nth-child(2) {
+    animation: marquee2 10s linear infinite;
+    animation-delay: -10s;
+}
+
+.marquee {
+    display: flex;
+    white-space: nowrap;
+}
+
+@keyframes marquee2 {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+
+@keyframes marquee {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(-200%, 0, 0);
+        transform: translate3d(-200%, 0, 0);
+    }
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: center;
+    margin: 10vw;
+    position: relative;
+}
+
+.about-us-container > img {
+    display: block;
+    margin: 0 auto;
+    opacity: 0.5;
+    width: 50%;
+}
+
+.about-us-text {
+    color: $black;
+    max-width: 1000px;
+    position: absolute;
+}
+
+.about-us-title {
+    font-size: 5vw;
+    font-weight: 700;
+}
+
+.about-us-description {
+    font-size: 1.5vw;
+}
+
+.reservation-container {
+    align-items: center;
+    background-size: cover;
+    background-image: url('../../assets/images/newsletter-bg.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+
+.reservation-content {
+    background-color: rgba(255, 255, 255, 0.61);
+    background-blend-mode: overlay;
+    display: flex;
+    height: 90%;
+    width: 90%;
+}
+
+.rules-container {
+    flex-basis: 50%;
+    padding: 25px 60px 25px 30px;
+}
+
+.reservation-form-title,
+.rules-title {
+    font-size: 2.2vw;
+    font-weight: 700;
+}
+
+.rules-list {
+    font-size: 1.2vw;
+    padding-inline-start: 10px;
+}
+
+.rules-list > li {
+    margin-bottom: 20px;
+}
+
+.read-more {
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+.reservation-form-container {
+    flex-basis: 50%;
+    padding: 25px 30px 25px 60px;
+}
+
+.reservation-form-inputs,
+.reservation-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation-form-title {
+    text-align: center;
+}
+
+.reservation-form-terms {
+    font-size: 1.2vw;
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+.reservation-form-note {
+    font-size: 1vw;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.reservation-form-note > span {
+    color: $red;
+    font-weight: 700;
+}
+
+.reservation-form-inputs > input {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.reservation-form-container > button {
+    align-self: flex-end;
+    margin-top: 25px;
+}
+
+.privacy-policy {
+    display: flex;
+    align-items: center;
+}
+
+.privacy-policy > input {
+    height: 25px;
+    width: 25px;
+}
+
+
+.faq-container {
+    margin: 0 auto;
+    max-width: 70vw;
+    margin-bottom: 100px;
+}
+
+.faq-title {
+    border-bottom: 1px solid $black;
+    font-size: 5vw;
+    font-weight: 700;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.faq {
+    border-bottom: 1px solid $black;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 30px 0 30px 0;
+}
+
+.faq-text {
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+
+
+@media only screen and (max-width: 1279px) {
+    .slider-container {
+        height: 60vw;
+    }
+    .slider-image {
+        max-height: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slider-image-text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 46px;
+    }
+
+    .slider-image-title {
+        font-size: 6vw;
+        margin-bottom: 50px;
+    }
+
+    .slider-image-description {
+        font-size: 2vw;
+    }
+
+    .marquee-container {
+        height: 5vw;
+    }
+
+    .about-us-container {
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-us-title {
+        font-size: 6vw;
+    }
+
+    .about-us-description {
+        font-size: 2vw;
+    }
+
+    .reservation-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rules-container {
+        padding: 25px 0 25px 0;
+    }
+
+    .reservation-form-title,
+    .rules-title {
+        font-size: 3vw;
+    }
+
+    .rules-list {
+        list-style-position: inside;
+        font-size: 1.5vw;
+    }
+
+    .reservation-form-container {
+        padding: 25px 0 25px 0;
+    }
+
+    .reservation-form-terms {
+        font-size: 1.5vw;
+    }
+
+    .reservation-form-note {
+        font-size: 1.2vw;
+    }
+
+    .reservation-form-inputs {
+        padding: 0 30px 0 30px;
+    }
+
+    .reservation-form-container > button {
+        align-self: center;
+        width: 80%;
+    }
+
+    .faq-title {
+        font-size: 6vw;
+    }
+
+    .faq-text {
+        font-size: 2vw;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .about-us-container,
+    .slider-container {
+        height: 90vw
+    }
+
+    .about-us-container > img {
+       width: 100%;
+    }
+
+    .faq-title,
+    .about-us-title,
+    .slider-image-title {
+        font-size: 8vw;
+    }
+
+    .faq-text,
+    .about-us-description,
+    .slider-image-description {
+        font-size: 3vw;
+    }
+
+    .reservation-container {
+        padding: 20px 0 20px 0;
+    }
+
+    .reservation-form-title,
+    .rules-title {
+        font-size: 4vw;
+    }
+
+    .reservation-form-terms,
+    .rules-list,
+    .read-more {
+        font-size: 2.5vw;
+    }
+
+    .rules-list {
+        padding: 0 20px 0 20px;
+    }
+
+    .reservation-form-note {
+        font-size: 2vw;
+    }
+
+    .faq-container {
+        max-width: 90vw;
+    }
+
+    .faq-text {
+        flex-basis: 80%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .about-us-container,
+    .slider-container {
+        height: 100vh;
+    }
+
+    .slider-image-title {
+        margin-bottom: 25px;
+    }
+
+    .about-us-title {
+        margin-bottom: 20px;
+    }
+
+    .faq-title,
+    .about-us-title,
+    .slider-image-title {
+        font-size: 10vw;
+    }
+
+    .faq-text,
+    .about-us-description,
+    .slider-image-description {
+        font-size: 4vw;
+    }
+
+    .reservation-form-title,
+    .rules-title {
+        font-size: 6vw;
+    }
+
+    .reservation-form-terms,
+    .rules-list,
+    .read-more {
+        font-size: 4vw;
+    }
+
+    .reservation-form-note {
+        font-size: 3vw;
+        padding: 0 30px 0 30px;
+    }
+
+    .reservation-form-inputs {
+        padding: 0 15px 0 15px;
+    }
+
+    .faq-title {
+        font-size: 12vw;
+    }
+
+    .faq-text {
+        font-size: 4vw;
+    }
+}

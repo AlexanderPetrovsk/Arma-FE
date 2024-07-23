@@ -1,8 +1,8 @@
 import './footer.scss';
-import armaLogo from '../assets/images/arma-logo-white.png';
 import phone from '../assets/icons/phone.svg';
 import email from '../assets/icons/email.svg';
 import location from '../assets/icons/location.svg';
+import armaLogo from '../assets/images/arma-logo-white.png';
 
 import { NavLink } from 'react-router-dom';
 

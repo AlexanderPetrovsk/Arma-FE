@@ -1,5 +1,4 @@
 import './home.scss';
-import whoWeAre from '../../assets/images/who-we-are.png';
 import plus from '../../assets/icons/plus.svg';
 
 function Home() {

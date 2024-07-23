@@ -1,5 +1,4 @@
 import './home.scss';
-import homeSlider from '../../assets/images/home-slider.png';
 import whoWeAre from '../../assets/images/who-we-are.png';
 import plus from '../../assets/icons/plus.svg';
 
@@ -24,7 +23,9 @@ function Home() {
         <div className='homepage-container'>
             <div className='slider-container'>
                 <div className='slider-image-text'>
-                    <div className='slider-image-title'>Lorem ipsum dolor sit amet consectetur.</div>
+                    <div className='slider-image-title'>
+                        Lorem ipsum dolor sit amet consectetur.
+                    </div>
                     <div className='slider-image-description'>
                         Lorem ipsum dolor sit amet consectetur. Eget mattis enim feugiat fermentum tempus.
                         Fermentum ac tortor urna mattis viverra dignissim.
@@ -43,7 +44,6 @@ function Home() {
                 </div>
             </div>
             <div className='about-us-container'>
-                <img src={whoWeAre} alt='' />
                 <div className='about-us-text'>
                     <div className='about-us-title'>
                         WHO WE ARE

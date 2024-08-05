@@ -21,7 +21,7 @@
 .slider-image-text {
     color: $white;
     margin-bottom: 80px;
-    max-width: 60vw;
+    max-width: 80vw;
     position: absolute;
 }
 
@@ -206,7 +206,6 @@
 
 .reservation-form-inputs > input {
     margin-bottom: 20px;
-    width: 100%;
 }
 
 .reservation-form-container > button {
@@ -294,6 +293,7 @@
 
     .about-us-description {
         font-size: 2vw;
+        margin-inline: 5%;
     }
 
     .reservation-content {
@@ -374,6 +374,7 @@
 
     .marquee-text {
         font-size: 6vw;
+        margin: 0;
     }
 
     .reservation-container {
@@ -412,7 +413,7 @@
 @media only screen and (max-width: 480px) {
     .about-us-container,
     .slider-container {
-        height: calc(100vh - 38px);
+        height: calc(100vh - 68px);
     }
 
     .slider-image-title {

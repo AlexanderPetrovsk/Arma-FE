@@ -63,7 +63,7 @@ body, html {
     font-size: 16px;
     height: 48px;
     text-indent: 1rem;
-    width: 433px;
+    -webkit-appearance: none;
   }
 
   .text-input::placeholder {

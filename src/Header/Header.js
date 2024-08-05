@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import ukFlag from '../assets/icons/uk-flag.svg';
 import hamMenu from '../assets/icons/ham-menu.svg';
 import armaLogo from '../assets/images/arma-logo.png';
+import armaLogoSm from '../assets/images/arma-logo-sm.png';
 import closeIcon from '../assets/icons/close-icon.svg';
 import chevronDown from '../assets/icons/chevron-down.svg';
 
@@ -18,7 +19,13 @@ function Header() {
 
     return (
       <div className={`header-container ${isMobileMenuOpen ? 'open' : ''}`}>
-        <img src={armaLogo} alt='' className='header-logo' />
+        <img
+          srcset={`${armaLogo} 1280w, ${armaLogoSm} 768w`}
+          sizes='(max-width: 768px) 768px, 1280px'
+          src={armaLogo}
+          alt=''
+          className='header-logo'
+        />
         <div className={`header-content ${isMobileMenuOpen ? 'open' : ''}`}>
           <div className='header-links-container'>
             <ul className='header-links'>
@@ -32,14 +39,14 @@ function Header() {
                 </NavLink>
               )}
             </ul>
+            <div className='locale-dropdown'>
+              <img className='locale-flag' src={ukFlag} alt='' />
+              <img className='dropdown-icon' src={chevronDown} alt='' />
+            </div>
           </div>
-          <div className='locale-dropdown'>
-            <img className='locale-flag' src={ukFlag} alt='' />
-            <img className='dropdown-icon' src={chevronDown} alt='' />
-          </div>
-          <div className='account-access'>
-            <p>LOG IN | REGISTER</p>
-          </div>
+          <p className='account-access'>
+            LOG IN | REGISTER
+          </p>
         </div>
         <div className='hamburger-menu'>
           <img

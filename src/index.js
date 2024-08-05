@@ -5,20 +5,20 @@ import Footer from './Footer/Footer';
 import Home from './Pages/Home/Home';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router>
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Navigate to="/home" />} />
         <Route path='/home' element={<Home />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>
 );
 

@@ -31,7 +31,7 @@ function Header() {
             <ul className='header-links'>
               {links.map((link, index) => 
                 <NavLink
-                  className={`header-link ${({ isActive }) => (isActive ? 'active' : '')}`}
+                  className="header-link"
                   to={`/${link.toLowerCase()}`}
                   key={index}
                 >

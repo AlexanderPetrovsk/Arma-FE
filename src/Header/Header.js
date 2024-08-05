@@ -20,7 +20,7 @@ function Header() {
     return (
       <div className={`header-container ${isMobileMenuOpen ? 'open' : ''}`}>
         <img
-          srcset={`${armaLogo} 1280w, ${armaLogoSm} 768w`}
+          srcSet={`${armaLogo} 1280w, ${armaLogoSm} 768w`}
           sizes='(max-width: 768px) 768px, 1280px'
           src={armaLogo}
           alt=''

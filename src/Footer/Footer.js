@@ -28,7 +28,7 @@ function Footer() {
                         )
                     })}
                 </div>
-                <div className='conact-info'>
+                <div className='contact-info'>
                     <div className='contact-item'>
                         <img src={phone} alt=''/>
                         <p>+(389)65 434 345</p>

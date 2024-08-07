@@ -2,13 +2,14 @@
 
 .footer-container {
     background: $black;
-    padding: 25px 50px 25px 50px;
+    padding: 0 5% 0 5%;
 }
 
 .top-footer {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    padding: 5% 0 5% 0;
 }
 
 .top-footer > p {
@@ -19,29 +20,30 @@
     height: auto;
     flex-basis: 25%;
     object-fit: contain;
+    margin-top: 2%;
 }
 
 .top-footer-links {
-    align-self: stretch;
     display: flex;
-    flex-direction: column;
+    flex-basis: 40%;
     flex-wrap: wrap;
-    flex-basis: 33%;
-    justify-content: end;
 }
 
 .top-footer-link {
     color: $white;
-    font-size: 2vw;
-    flex-basis: 30%;
+    font-size: $font-24;
+    flex-basis: 50%;
     text-decoration: none;
+    text-indent: 50%;
+    margin-top: 15px;
 }
 
 .contact-item {
     color: $white;
     display: flex;
-    font-size: 1.2vw;
+    font-size: $font-16;
     font-weight: 300;
+    max-width: 235px;
 }
 
 .contact-item > p {
@@ -58,6 +60,7 @@
 
 .bottom-footer-link {
     color: $white;
+    font-size: $font-14;
     font-weight: 200;
     margin-left: 30px;
     text-decoration: none;
@@ -82,8 +85,10 @@
     }
     
     .top-footer-link {
-        flex-basis: 35%;
-        margin-bottom: 10px;
+        align-self: center;
+        flex-basis: 50%;
+        text-indent: 25%;
+        margin-bottom: 25px;
     }
     
     .bottom-footer {
@@ -99,14 +104,9 @@
 
 
 @media only screen and (max-width: 768px) {
-    .top-footer-link {
-        font-size: 3vw;
-        flex-basis: 50%;
-        text-indent: 35%;
-    }
+
 
     .contact-item {
-        font-size: 2.5vw;
         max-width: 200px
     }
 
@@ -119,6 +119,6 @@
     }
 
     .bottom-footer-link {
-        font-size: 2.5vw;
+        margin-left: 10px;
     }
 }

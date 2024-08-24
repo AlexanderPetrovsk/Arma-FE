@@ -1,0 +1,303 @@
+@import '../../index.scss';
+
+
+.club-page-landing {
+    background-image: url('../../assets//images/club-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+    position: relative;
+    width: 100%;
+}
+
+.club-page-bg-addon {
+    bottom: 0;
+    position: absolute;
+    width: 45vw;
+    z-index: 1;
+}
+
+.club-page-landing-text {
+    color: $white;
+    padding: 10% 8% 0 45%
+}
+
+.club-page-title {
+    font-size: $font-80;
+    font-weight: 700;
+}
+
+.club-page-description {
+    font-size: $font-32;
+    font-weight: 500;
+}
+
+
+.info-paragraph {
+    margin: 0 auto;
+    padding: 5%;
+    width: 80vw;
+}
+
+.paragraph-title {
+    font-size: $font-40;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.paragraph-description {
+    font-size: $font-24;
+}
+
+.our-mission-container {
+    background-color: $blue;
+    display: flex;
+    height: 50vw;
+    max-height: 1000px;
+}
+
+.picture-container {
+    height: auto;
+    border-top: 20px solid $red;
+    border-right: 20px solid $red;
+    margin-bottom: 20px;
+    position: relative;
+    width: 50%;
+}
+
+.picture-container > img {
+    background-image: linear-gradient(to bottom, $red 30px, $blue 30px);
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.picture-container::before {
+    background-image: linear-gradient(to bottom, $red 30px, $blue 30px);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 20px;
+}
+
+.mission-text-container {
+    color: $white;
+    border-top: 50px solid $white;
+    flex-basis: 50%;
+}
+
+.mission-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.mission-title {
+    font-size: $font-80;
+    font-weight: 700;
+    margin-top: 5%;
+    padding: 2% 8%;
+}
+
+.mission-description {
+    font-size: $font-24;
+    font-weight: 300;
+    padding: 2% 8%;
+}
+
+
+.benefits-container {
+    background-image: url('../../assets/images/benefits.png');
+    background-size: cover;
+    color: $white;
+    margin: 15% 0;
+    padding: 15% 5%;
+}
+
+.benefits-title {
+    font-size: $font-40;
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+
+.benefits-description {
+    font-size: $font-24;
+    font-weight: 300;
+}
+
+
+.training-title,
+.training-description {
+    padding: 0 12%;
+    text-align: center;
+}
+
+.training-title {
+    font-size: $font-80;
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+
+.training-description {
+    font-size: $font-24;
+    margin-bottom: 15%;
+}
+
+.training-programs-list {
+    display: flex;
+    height: max(40vw, 400px);
+    margin-bottom: 15%;
+    overflow: auto;
+}
+
+.training-program-container {
+    align-items: center;
+    color: $white;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    min-width: max(30vw, 300px);
+}
+
+.training-program-title {
+    font-size: $font-32;
+    margin: 15% 0;
+}
+
+.training-program-description {
+    font-size: $font-24;
+    flex-basis: 50%;
+    padding: 0 10%;
+}
+
+.join-program-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15%;
+}
+
+.join-program-text {
+    flex-basis: 45%;
+}
+
+.join-program-title {
+    font-size: $font-40;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.join-program-description {
+    font-size: $font-24;
+}
+
+.join-program-form {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.join-program-form > * {
+    margin-bottom: 5%;
+}
+
+.join-program-form > button {
+    align-self: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+    .club-page-landing {
+        height: 40vw;
+    }
+
+    .club-page-landing-text {
+        padding: 10% 0% 0 46%;
+    }
+
+    .our-mission-container {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    .picture-container::before {
+        display: none;
+    }
+
+    .picture-container {
+        margin-bottom: -40px;
+        position: relative;
+        width: 70%;
+        align-self: flex-end;
+        border: 10px solid $red;
+        border-right: none;
+    }
+
+    .mission-text {
+        margin-bottom: 50px;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .join-program-container {
+        flex-direction: column;
+        padding: 0 10%;
+    }
+
+    .join-program-text {
+        text-align: center;        
+        margin-bottom: 15%;
+    }
+}
+
+
+@media only screen and (max-width: 492px) {
+    .club-page-landing {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 140vw;
+        justify-content: space-between;
+    }
+
+    .club-page-bg-addon {
+        height: auto;
+        margin-left: -35%;
+        position: static;
+        width: 100%;
+    }
+
+    .club-page-landing-text {
+        padding: 0;
+        padding-top: 10%;
+    }
+
+    .club-page-title {
+        max-width: 90%;
+        margin: 0 5% auto;
+    }
+
+    .club-page-description {
+        position: absolute;
+        left: 30%;
+        margin-top: 5%;
+        font-size: $font-24;
+    }
+
+    .info-paragraph {
+        text-align: center;
+        width: 90vw;
+    }
+    
+    .benefits-container {
+        padding: 15% 2%;
+        text-align: center;
+    }
+
+    .benefits-title {
+        line-height: 3rem;
+    }
+
+    .join-program-form > button {
+        width: 100%;
+    }
+}

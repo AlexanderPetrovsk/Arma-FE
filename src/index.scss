@@ -5,13 +5,14 @@ $black: #000000;
 $dark-gray: #8F8F8F;
 $light-gray: #D9D9D9;
 
-$font-80: clamp(2.5rem, 6vw, 8rem);
-$font-32: clamp(1.4rem, 2.5vw, 3.5rem);
-$font-24: clamp(1.2rem, 1.9vw, 2.5rem);
-$font-20: clamp(1rem, 1.5vw, 2rem);
-$font-18: clamp(1rem, 1.35vw, 1.75rem);
-$font-16: clamp(0.95rem, 1.25vw, 1.5rem);
-$font-14: clamp(0.875rem, 1vw, 1.25rem);
+$font-80: clamp(2.5rem, 6.25vw, 8.45rem);
+$font-40: clamp(1.5rem, 3.125vw, 8.45rem);
+$font-32: clamp(1.375rem, 2.5vw, 3.5rem);
+$font-24: clamp(1.125rem, 1.875vw, 2.5rem);
+$font-20: clamp(1rem, 1.5625vw, 2.25rem);
+$font-18: clamp(1rem, 1.40625vw, 2rem);
+$font-16: clamp(0.875rem, 1.25vw, 1.75rem);
+$font-14: clamp(0.8125rem, 1.09375vw, 1.25rem);
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
@@ -45,18 +46,26 @@ body, html {
   height: 48px;
 }
 
+.cancel-button {
+  background-color: $light-gray;
+  border: 1px solid $light-gray;
+  color: $dark-gray;
+  cursor: pointer;
+  height: 48px;
+}
+
 .lg-button {
-  font-size: 18px;
+  font-size: 1.125rem;
   width: 276px;
 }
 
 .md-button {
-  font-size: 20px;
+  font-size: 1.25rem;
   width: 205px;
 }
 
 .sm-button {
-  font-size: 20px;
+  font-size: 1.25rem;
   width: 147px;
 }
 /* buttons */
@@ -92,3 +101,188 @@ body, html {
     color: $dark-gray;
   }
 /* text-inputs */
+
+
+/* flexbox */
+.d-flex {
+  display: flex
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.f-basis-100 {
+  flex-basis: 100%;
+}
+
+.f-basis-50 {
+  flex-basis: 50%;
+}
+
+.f-basis-45 {
+  flex-basis: 45%;
+}
+
+.a-items-center {
+  align-items: center;
+}
+
+.a-self-end {
+  align-self: flex-end;
+}
+
+.j-content-between {
+  justify-content: space-between;
+}
+
+.j-content-center {
+  justify-content: center;
+}
+/* flexbox */
+
+
+/* text */
+.f-w-300 {
+  font-weight: 300;
+}
+
+.f-w-500 {
+  font-weight: 500;
+}
+
+.f-w-700 {
+  font-weight: 700;
+}
+
+.f-s-80 {
+  font-size: $font-80;
+}
+
+.f-s-40 {
+  font-size: $font-40;
+}
+
+.f-s-32 {
+  font-size: $font-32;
+}
+
+.f-s-24 {
+  font-size: $font-24;
+}
+
+.f-s-20 {
+  font-size: $font-20;
+}
+
+.f-s-18 {
+  font-size: $font-18;
+}
+
+.f-s-16 {
+  font-size: $font-16;
+}
+
+.f-s-14 {
+  font-size: $font-14;
+}
+
+.c-white {
+  color: $white;
+}
+
+.c-red {
+  color: $red;
+}
+
+.c-black {
+  color: $black;
+}
+.text-center {
+  text-align: center;
+}
+/* text */
+
+
+/* margins */
+.no-margin {
+  margin: 0 !important;
+}
+
+.m-r-2 {
+  margin-right: 2%;
+}
+
+.m-r-5 {
+  margin-right: 5%;
+}
+
+.m-r-10 {
+  margin-right: 10%;
+}
+
+.m-r-15 {
+  margin-right: 15%;
+}
+
+.m-r-20 {
+  margin-right: 20%;
+}
+
+.m-r-25 {
+  margin-right: 25%;
+}
+
+.m-b-2 {
+  margin-bottom: 2%;
+}
+
+.m-b-5 {
+  margin-bottom: 5%;
+}
+
+.m-b-10 {
+  margin-bottom: 10%;
+}
+
+.m-b-15 {
+  margin-bottom: 15%;
+}
+
+.m-b-20 {
+  margin-bottom: 20%;
+}
+
+.m-b-25 {
+  margin-bottom: 25%;
+}
+/* margins */
+
+
+/* paddings */
+.p-l-2 {
+  padding-left: 2%;
+}
+
+.p-r-2 {
+  padding-right: 2%;
+}
+
+.p-t-b-20 {
+  padding-block: 20%;
+}
+/* paddings */
+
+/* widths */
+.w-100 {
+  width: 100%;
+}
+
+.w-80 {
+  width: 80%;
+}
+/* widths */

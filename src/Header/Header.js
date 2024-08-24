@@ -45,7 +45,13 @@ function Header() {
             </div>
           </div>
           <p className='account-access'>
-            LOG IN | REGISTER
+            <NavLink className="header-link no-margin" to='/login'>
+              LOG IN
+            </NavLink>
+             |
+            <NavLink className="header-link no-margin" to='/register'>
+              REGISTER
+            </NavLink>
           </p>
         </div>
         <div className='hamburger-menu'>

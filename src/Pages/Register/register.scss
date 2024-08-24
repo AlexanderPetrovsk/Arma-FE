@@ -1,0 +1,12 @@
+.old-user {
+    background-image: url('../../assets/images/register-page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+    .register-container {
+        flex-direction: column-reverse;
+    }
+
+}

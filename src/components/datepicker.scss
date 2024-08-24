@@ -1,0 +1,93 @@
+@import '../index.scss';
+
+$grid-container-size: min(10vw, 48px);
+$date-font: clamp(1rem, 3vw, 1.25rem);
+
+.datepicker-container {
+    position: relative;
+}
+
+.datepicker-toggle {
+    cursor: pointer;
+    padding-inline: 0;
+    width: 100%;
+}
+
+.datepicker-popup {
+    background: white;
+    border: 1px solid $black;
+    left: 0;
+    margin: auto;
+    margin-top: 10px;
+    position: absolute;
+    right: 0;
+    max-width: 433px;
+}
+
+.datepicker-header {
+    align-items: center;
+    display: flex;
+    font-size: $date-font;
+    font-weight: 500;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.datepicker-header > img {
+    cursor: pointer;
+}
+
+.datepicker-weekdays {
+    display: grid;
+    font-weight: 500;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(7, auto);
+    grid-row: 1;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.datepicker-weekday {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: $grid-container-size;
+}
+
+.datepicker-days {
+    display: grid;
+    font-size: $date-font;
+    font-weight: 500;
+    grid-template-columns: repeat(7, auto);
+    grid-row-gap: 5px;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.datepicker-day {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: $grid-container-size;
+    justify-content: center;
+    width: $grid-container-size;
+}
+
+.datepicker-day.active {
+    background: $blue;
+    border-radius: 8px;
+    color: $white;
+}
+
+.datepicker-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 2%;
+}
+
+
+.datepicker-buttons > button {
+    font-size: $date-font;
+}

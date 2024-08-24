@@ -1,5 +1,6 @@
 import './home.scss';
 import plus from '../../assets/icons/plus.svg';
+import DatePicker from '../../components/datepicker';
 
 function Home() {
     const rules = [
@@ -90,7 +91,7 @@ function Home() {
                             <input className='text-input' placeholder='Name Surname' />
                             <input className='text-input' placeholder='Phone Number' />
                             <input className='text-input' placeholder='Email Address' />
-                            <input className='text-input' type='date'/>
+                            <DatePicker />
                             <div className='privacy-policy'>
                                 <input type='checkbox' />
                                 <label>I agree to the Privacy Policy</label>

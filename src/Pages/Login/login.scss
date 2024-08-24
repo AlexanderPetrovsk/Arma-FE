@@ -1,0 +1,15 @@
+.new-user {
+    background-image: url('../../assets/images/login-page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-form {
+        padding-block: 10%;
+    }
+}

@@ -3,6 +3,8 @@ import message from '../../../assets/icons/message.svg';
 import eye from '../../../assets/icons/eye.svg';
 import heart from '../../../assets/icons/heart.svg';
 import reply from '../../../assets/icons/reply.svg';
+import { useState } from 'react';
+import Pagination from '../../../components/Pagination/pagination';
 
 function ForumList() {
     const tags = [
@@ -63,8 +65,43 @@ function ForumList() {
             datePosted: new Date().toLocaleString(),
             nmComments: 0,
             views: 0
+        },
+        {
+            title: 'Lorem ipsum dolor sit amet consectetur. Facilisis ac velit id massa ullamcorper congue.',
+            user: `@Thorbrjon`,
+            userImg: null,
+            datePosted: new Date().toLocaleString(),
+            nmComments: 0,
+            views: 0
+        },
+        {
+            title: 'Lorem ipsum dolor sit amet consectetur. Facilisis ac velit id massa ullamcorper congue.',
+            user: `@Thorbrjon`,
+            userImg: null,
+            datePosted: new Date().toLocaleString(),
+            nmComments: 0,
+            views: 0
+        },
+        {
+            title: 'Lorem ipsum dolor sit amet consectetur. Facilisis ac velit id massa ullamcorper congue.',
+            user: `@Thorbrjon`,
+            userImg: null,
+            datePosted: new Date().toLocaleString(),
+            nmComments: 0,
+            views: 0
         }
-    ]
+    ];
+
+    const handleChange = (currentPage) => {
+        setCurrentPage(currentPage);
+    }
+
+    const [currentPage, setCurrentPage] = useState(1);
+    const perPage = 5;
+
+    const postsFrom = (currentPage - 1) * perPage;
+    const postsTo = currentPage * perPage;
+
     return (
         <div className='forum-content-container'>
             <div className='forum-sidebar'>
@@ -103,9 +140,9 @@ function ForumList() {
                         </ol>
                     </div>
             </div>
-            <div className='forum-posts-container'>
+            <div className='forum-posts-container m-b-10'>
                 <div className='forum-posts'>
-                    { forumPosts.map((post, index) => {
+                    { forumPosts.slice(postsFrom, postsTo).map((post, index) => {
                         return (
                             <div className='forum-post' key={index}>
                                 <div className='forum-post-header'>
@@ -145,6 +182,7 @@ function ForumList() {
                         )
                     })}
                 </div>
+                <Pagination perPage={perPage} items={forumPosts} onChange={(currentPage) => { handleChange(currentPage) }} />
             </div>
         </div>
     )

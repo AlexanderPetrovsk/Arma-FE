@@ -8,7 +8,7 @@
     background-position: center;
     display: flex;
     flex-direction: column;
-    height: 30vw;
+    height: max(30vw, 350px);
     justify-content: normal;
     width: 100%;
 }
@@ -42,7 +42,7 @@
 }
 
 .search-input {
-    flex-basis: 45%;
+    flex-basis: 40%;
 }
 
 .recency-select {
@@ -60,7 +60,6 @@
     flex-basis: 25%;
 }
 
-
 .tag {
     background-color: $light-gray;
     padding: 2%;
@@ -73,6 +72,11 @@
 
 .forum-posts-container {
     flex-basis: 45%;
+}
+
+.forum-posts {
+    max-height: 90vh;
+    overflow: auto;
 }
 
 .forum-post {
@@ -182,7 +186,7 @@
     }
 
     .forum-create-form div:first-child > input {
-        flex-basis: 100%;
+        flex-basis: auto;
         margin-bottom: 2%;
     }
 }

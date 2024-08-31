@@ -1,6 +1,6 @@
 import './home.scss';
 import plus from '../../assets/icons/plus.svg';
-import DatePicker from '../../components/datepicker';
+import DatePicker from '../../components/Datepicker/datepicker';
 
 function Home() {
     const rules = [
@@ -87,7 +87,7 @@ function Home() {
                         <div className='reservation-form-note'>
                             <span>NOTE: </span>The Reservation is for one person for a duration of 1 hour 
                         </div>
-                        <div className='reservation-form-inputs'>
+                        <div className='reservation-form-inputs relative'>
                             <input className='text-input' placeholder='Name Surname' />
                             <input className='text-input' placeholder='Phone Number' />
                             <input className='text-input' placeholder='Email Address' />

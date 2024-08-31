@@ -1,5 +1,5 @@
 import './club.scss';
-import DatePicker from '../../components/datepicker';
+import DatePicker from '../../components/Datepicker/datepicker';
 import mission from '../../assets/images/mission.png';
 import clubBgAddon from '../../assets/images/club-bg-addon.png';
 import carbine from '../../assets/images/trainingPrograms/carbine.png';
@@ -142,7 +142,10 @@ function Club() {
                             })
                         }
                     </select>
-                    <DatePicker />
+                    <div className='d-flex j-content-between relative'>
+                        <DatePicker classes='f-basis-45' placeholder='Start date' />
+                        <DatePicker classes='f-basis-45' placeholder='End date' />
+                    </div>
                     <div className='privacy-policy'>
                         <input type='checkbox' />
                         <label>I agree to the Privacy Policy</label>

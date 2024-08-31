@@ -79,6 +79,9 @@ body, html {
     color: $black;
     font-size: 16px;
     height: 48px;
+    padding: 0;
+    padding-block: 0;
+    padding-inline: 0;
     text-indent: 1rem;
     -webkit-appearance: none;
   }
@@ -99,6 +102,14 @@ body, html {
 
   .text-input:focus::placeholder {
     color: $dark-gray;
+  }
+
+  .placeholder-indent::placeholder {
+    text-indent: 3em;
+  }
+
+  .placeholder-indent {
+    text-indent: 3em;
   }
 /* text-inputs */
 
@@ -268,6 +279,10 @@ body, html {
   padding-left: 2%;
 }
 
+.p-l-5 {
+  padding-left: 5%;
+}
+
 .p-r-2 {
   padding-right: 2%;
 }
@@ -286,3 +301,26 @@ body, html {
   width: 80%;
 }
 /* widths */
+
+
+
+/* positions */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.center-v-absolute {
+  bottom: 0;
+  margin: auto;
+  top: 0;
+}
+
+.push-icon-left {
+  right: 0.75em;
+}
+/* positions */

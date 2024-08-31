@@ -126,6 +126,7 @@
     .products-list-container {
         margin-top: 20rem;
     }
+
     .shop-search-input,
     .category-select,
     .filter-select {
@@ -135,6 +136,7 @@
 
 @media only screen and (max-width: 768px) {
     .shop-header-filters-container {
+        min-height: 300px;
         width: 90%;
     }
 

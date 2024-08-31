@@ -34,6 +34,7 @@ function Header() {
                   className="header-link"
                   to={`/${link.toLowerCase()}`}
                   key={index}
+                  onClick={() => handleMobileMenuClick()}
                 >
                   { link }
                 </NavLink>
@@ -45,11 +46,19 @@ function Header() {
             </div>
           </div>
           <p className='account-access'>
-            <NavLink className="header-link no-margin" to='/login'>
+            <NavLink
+              className="header-link no-margin"
+              to='/login'
+              onClick={() => handleMobileMenuClick()}  
+            >
               LOG IN
             </NavLink>
              |
-            <NavLink className="header-link no-margin" to='/register'>
+            <NavLink
+              className="header-link no-margin"
+              to='/register'
+              onClick={() => handleMobileMenuClick()}  
+            >
               REGISTER
             </NavLink>
           </p>

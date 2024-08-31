@@ -25,72 +25,22 @@ function ForumList() {
         'Lorem Ipsum Dolor sit Amet Consecteteur',
     ]
 
-    const forumPosts = [
-        {
-            title: 'Lorem ipsum dolor sit amet consectetur. Facilisis ac velit id massa ullamcorper congue.',
-            user: `@Thorbrjon`,
-            userImg: null,
-            datePosted: new Date().toLocaleString(),
-            nmComments: 0,
-            views: 0
-        },
-        {
-            title: 'Lorem ipsum dolor sit amet consectetur. Facilisis ac velit id massa ullamcorper congue.',
-            user: `@Thorbrjon`,
-            userImg: null,
-            datePosted: new Date().toLocaleString(),
-            nmComments: 0,
-            views: 0
-        },
-        {
-            title: 'Lorem ipsum dolor sit amet consectetur. Facilisis ac velit id massa ullamcorper congue.',
-            user: `@Thorbrjon`,
-            userImg: null,
-            datePosted: new Date().toLocaleString(),
-            nmComments: 2,
-            views: 5
-        },
-        {
-            title: 'Lorem ipsum dolor sit amet consectetur. Facilisis ac velit id massa ullamcorper congue.',
-            user: `@Thorbrjon`,
-            userImg: null,
-            datePosted: new Date().toLocaleString(),
-            nmComments: 0,
-            views: 0
-        },
-        {
-            title: 'Lorem ipsum dolor sit amet consectetur. Facilisis ac velit id massa ullamcorper congue.',
-            user: `@Thorbrjon`,
-            userImg: null,
-            datePosted: new Date().toLocaleString(),
-            nmComments: 0,
-            views: 0
-        },
-        {
-            title: 'Lorem ipsum dolor sit amet consectetur. Facilisis ac velit id massa ullamcorper congue.',
-            user: `@Thorbrjon`,
-            userImg: null,
-            datePosted: new Date().toLocaleString(),
-            nmComments: 0,
-            views: 0
-        },
-        {
-            title: 'Lorem ipsum dolor sit amet consectetur. Facilisis ac velit id massa ullamcorper congue.',
-            user: `@Thorbrjon`,
-            userImg: null,
-            datePosted: new Date().toLocaleString(),
-            nmComments: 0,
-            views: 0
-        },
-        {
-            title: 'Lorem ipsum dolor sit amet consectetur. Facilisis ac velit id massa ullamcorper congue.',
-            user: `@Thorbrjon`,
-            userImg: null,
-            datePosted: new Date().toLocaleString(),
-            nmComments: 0,
-            views: 0
+    const addForumPosts = () => {
+        for (let i = 0; i <= 100; i++) {
+            forumPosts.push({
+                title: 'Lorem ipsum dolor sit amet consectetur. Facilisis ac velit id massa ullamcorper congue.',
+                user: `@Thorbrjon`,
+                userImg: null,
+                datePosted: new Date().toLocaleString(),
+                nmComments: 0,
+                views: 0
+            })
         }
-    ];
+    }
+
+    const forumPosts = [];
+
+    addForumPosts();
 
     const handleChange = (currentPage) => {
         setCurrentPage(currentPage);

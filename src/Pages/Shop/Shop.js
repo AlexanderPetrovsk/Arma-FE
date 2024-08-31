@@ -7,84 +7,21 @@ import chevronDown from '../../assets/icons/chevron-down.svg';
 import filter from '../../assets/icons/filter.svg';
 
 function Shop() {
-    const products = [
-        {
-            image: product,
-            name: 'Lorem Ipsum',
-            price: '$239'
-        },
-        {
-            image: product,
-            name: 'Lorem Ipsum',
-            price: '$239'
-        },
-        {
-            image: product,
-            name: 'Lorem Ipsum',
-            price: '$239'
-        },
-        {
-            image: product,
-            name: 'Lorem Ipsum',
-            price: '$239'
-        },
-        {
-            image: product,
-            name: 'Lorem Ipsum',
-            price: '$239'
-        },
-        {
-            image: product,
-            name: 'Lorem Ipsum',
-            price: '$239'
-        },
-        {
-            image: product,
-            name: 'Lorem Ipsum',
-            price: '$239'
-        },
-        {
-            image: product,
-            name: 'Lorem Ipsum',
-            price: '$239'
-        },
-        {
-            image: product,
-            name: 'Lorem Ipsum',
-            price: '$239'
-        },
-        {
-            image: product,
-            name: 'Lorem Ipsum',
-            price: '$239'
-        },
-        {
-            image: product,
-            name: 'Lorem Ipsum',
-            price: '$239'
-        },
-        {
-            image: product,
-            name: 'Lorem Ipsum',
-            price: '$239'
-        },
-        {
-            image: product,
-            name: 'Lorem Ipsum',
-            price: '$239'
-        },
-        {
-            image: product,
-            name: 'Lorem Ipsum',
-            price: '$239'
-        },
-        {
-            image: product,
-            name: 'Lorem Ipsum',
-            price: '$239'
+
+    const products = [];
+
+    const addProducts = () => {
+        for (let i = 0; i <= 100; i++) {
+            products.push({
+                image: product,
+                name: 'Lorem Ipsum',
+                price: '$239'
+            })
         }
-    ]
+    }
     
+    addProducts();
+
     const handleChange = (currentPage) => {
         setCurrentPage(currentPage);
     }

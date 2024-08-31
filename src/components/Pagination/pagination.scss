@@ -1,0 +1,42 @@
+@import '../../index.scss';
+
+.pagination-container {
+    float: right;
+}
+
+.next-container,
+.prev-container {
+    align-items: center;
+    border: 1px solid $dark-gray;
+    cursor: pointer;
+    display: flex;
+    height: min(10vw, 48px);
+    justify-content: center;
+    width: min(10vw, 48px);
+}
+
+.pagination-page-container {
+    align-items: center;
+    border: 1px solid $dark-gray;
+    cursor: pointer;
+    display: flex;
+    height: min(10vw, 48px);
+    justify-content: center;
+    margin-inline: 1%;
+    width: min(10vw, 48px);
+}
+
+.pagination-page-container.active {
+    font-weight: 700;
+    background-color: $light-gray;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .pagination-container {
+        justify-content: center;
+        float: none;
+        margin-right: 0 !important;
+        margin-inline: 2%;
+    }
+}

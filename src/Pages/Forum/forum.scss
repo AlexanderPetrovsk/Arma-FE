@@ -124,8 +124,9 @@
     padding: 5%;
 }
 
-.forum-create-form > textarea {
+.forum-create-form .quill {
     height: 10rem;
+    margin-bottom: 5rem;
 }
 
 @media only screen and (max-width: 1279px) {

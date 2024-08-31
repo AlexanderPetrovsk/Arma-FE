@@ -1,4 +1,10 @@
+import { useState } from "react";
+import ReactQuill from "react-quill";
+import 'react-quill/dist/quill.snow.css';
+
 function ForumCreate() {
+    const [value, setValue] = useState('');
+
     return (
         <div className='forum-create-container'>
             <div className='f-s-32 f-w-700 m-b-2'>Start Conversation</div>
@@ -10,7 +16,7 @@ function ForumCreate() {
                     <input className='text-input f-basis-45' placeholder='Title'></input>
                     <input className='text-input f-basis-45' placeholder='Recipient'></input>
                 </div>
-                <textarea className='text-input m-b-2' placeholder='Message'></textarea>
+                <ReactQuill theme="snow" value={value} onChange={setValue} />
                 <div className='privacy-policy m-b-2'>
                     <input type='checkbox' />
                     <label>I agree to the Privacy Policy</label>
